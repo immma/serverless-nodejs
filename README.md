@@ -22,6 +22,6 @@ https://serverless.com/framework/docs/providers/aws/guide/installation/
 6. Run API call to upload the image with base64 encoded string in JSON. (Visit https://www.browserling.com/tools/image-to-base64 for converting image to base64 online)
 
 Example -     
-https://xxxxxx.execute-api.us-east-1.amazonaws.com/dev/handler?username=sampleavatar     
+https://xxxxxx.execute-api.us-east-1.amazonaws.com/dev/handler     
 Content-Type: application/json     
 Take the JSON payload from - request.json file    
