@@ -24,4 +24,14 @@ https://serverless.com/framework/docs/providers/aws/guide/installation/
 Example -     
 https://xxxxxx.execute-api.us-east-1.amazonaws.com/dev/handler     
 Content-Type: application/json     
-Take the JSON payload from - request.json file    
+Take the JSON payload from - request.json file 
+
+
+Payload example:
+
+```
+{
+	"filename": "[fileName/namaFile]",
+	"filedata" : [base64PNGImage]
+}
+```
