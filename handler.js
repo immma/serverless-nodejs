@@ -1,7 +1,7 @@
 console.log('Loading function');
 
 var AWS = require('aws-sdk');
-AWS.config.update({ region: 'us-east-1' });
+AWS.config.update({ region: 'us-west-1' });
 var s3 = new AWS.S3();
 
 
@@ -10,13 +10,13 @@ exports.handler = (event, context, callback) => {
   let ts = Date.now();
   let encodedImage = JSON.parse(event.body).filedata;
   let decodedImage = Buffer.from(encodedImage, 'base64');
-  var filePath = "upload/" + JSON.parse(event.body).filename + "_" + ts + ".png"
+  var filePath = JSON.parse(event.body).filename + "_" + ts + ".jpg"
 
   var params = {
     "Body": decodedImage,
-    "Bucket": "input-code",
+    "Bucket": [BUCKET-NAME],
     "Key": filePath,
-    "ContentType " : "mime/png"
+    "ContentType " : "mime/jpg"
   };
   s3.upload(params, function (err, data) {
     if (err) {
