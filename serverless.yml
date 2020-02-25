@@ -10,11 +10,11 @@ provider:
     -  Effect: "Allow"
        Action:
          - "s3:ListBucket"
-       Resource: "arn:aws:s3:::input-code"
+       Resource: "arn:aws:s3:::[BUCKET-NAME]/*"
     -  Effect: "Allow"
        Action:
          - "s3:PutObject"
-       Resource: "arn:aws:s3:::input-code/*"
+       Resource: "arn:aws:s3:::[BUCKET-NAME]/*"
 
 functions:
   index:
