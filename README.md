@@ -1,6 +1,3 @@
-# THIS IS CLONE AND MODIFY 
-From https://github.com/imran9m/aws-api-lambda-s3-image-upload
-
 # AWS Upload Image to S3 via ApiGateway & Lambda
 
 A sample repository which demonstrates uploading images to S3 via Api Gateway - Lambda integration.
@@ -15,7 +12,7 @@ https://serverless.com/framework/docs/providers/aws/guide/installation/
 
 3. Save all files and run "serverless package" for any validation errors.
 
-4. Now run "serverless deploy" which does actual infrastructure deployment. Note - Based on your CLI settings, resources will be created in that region. Also, handler.js has region hard coded to "us-east-1" which you can modify based on your need.
+4. Now run "serverless deploy" which does actual infrastructure deployment. Note - Based on your CLI settings, resources will be created in that region. Also, handler.js has region hard coded to "ap-southeast-2" which you can modify based on your need.
 
 5. Output should give API Gateway Endpoint which is created - something like https://xxxxxx.execute-api.us-east-1.amazonaws.com/dev/handler
 
